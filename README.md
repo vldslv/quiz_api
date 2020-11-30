@@ -4,12 +4,12 @@
 
 В консоли необходимо перейти в директорию проекта и выполнить следующие команды:
 <ul>
-  <li>python -m venv venv ///// - установка виртуального окружения</li>
-  <li>source venv/Scripts/activate ///// - активация виртуального окружения</li>
-  <li>pip install -r requirements.txt ///// - установка зависимостей</li>
-  <li>cd quiz_api/</li>
-  <li>python manage.py migrate ///// - миграция базы данных</li>
-  <li>python manage.py runserver ///// - запуск сервера</li>
+  <li><code>python -m venv venv</code> - установка виртуального окружения</li>
+  <li><code>source venv/Scripts/activate</code> - активация виртуального окружения</li>
+  <li><code>pip install -r requirements.txt</code> - установка зависимостей</li>
+  <li><code>cd quiz_api/</code></li>
+  <li><code>python manage.py migrate</code> - миграция базы данных</li>
+  <li><code>python manage.py runserver</code> - запуск сервера</li>
 </ul>
 
 <h2>Администрирование</h2>
@@ -30,7 +30,7 @@ PK - уникальный идентификатор вопроса
 Текст вопроса
 Тип вопроса - текстовое поле, выбор одного варианта или множественный выбор
 Ответ на вопрос - формат JSON
-При удалении квиза все связанные с ним вопросы остаются. Это можно изменить, поменяв в модели Question on_delete=models.SET_NULL на on_delete=models.CASCADE)
+При удалении квиза все связанные с ним вопросы остаются. Это можно изменить, поменяв в модели <code>Question on_delete=models.SET_NULL</code> на <code>on_delete=models.CASCADE</code>)
 
 Раздел "Прохождения" ( http://127.0.0.1:8000/admin/quizzes/attempt/ ) содержит список с результатами пройденных тестов.
 Раздел "Ответы" ( http://127.0.0.1:8000/admin/quizzes/answer/ ) - подробная информация об ответах пользователя
