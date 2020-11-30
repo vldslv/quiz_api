@@ -3,17 +3,19 @@
 <h2>Запуск проекта</h2>
 
 В консоли необходимо перейти в директорию проекта и выполнить следующие команды:
-python -m venv venv ///// - установка виртуального окружения
-source venv/Scripts/activate ///// - активация виртуального окружения 
-pip install -r requirements.txt ///// - установка зависимостей
-cd quiz_api/
-python manage.py migrate ///// - миграция базы данных
-python manage.py runserver ///// - запуск сервера
+<ul>
+  <li>python -m venv venv ///// - установка виртуального окружения</li>
+  <li>source venv/Scripts/activate ///// - активация виртуального окружения</li>
+  <li>pip install -r requirements.txt ///// - установка зависимостей</li>
+  <li>cd quiz_api/</li>
+  <li>python manage.py migrate ///// - миграция базы данных</li>
+  <li>python manage.py runserver ///// - запуск сервера</li>
+</ul>
 
 <h2>Администрирование</h2>
 
 Для создания пользователя с правами администратора в консоли нужно выполнить команду
-python manage.py createsuperuser
+<code>python manage.py createsuperuser</code>
 Затем указать имя пользователя, e-mail, пароль (2 раза).
 
 Админ.панель находится по адресу http://127.0.0.1:8000/admin/
