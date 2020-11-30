@@ -33,10 +33,10 @@
   <li>Ответ на вопрос (в формате JSON)</li>
 </ul>
 
-При удалении квиза все связанные с ним вопросы остаются. Это можно изменить, поменяв в модели</br>
-<code>Question on_delete=models.SET_NULL</code></br>
+При удалении квиза все связанные с ним вопросы остаются. Это можно изменить, поменяв в модели Question</br>
+<code>on_delete=models.SET_NULL</code></br>
 на</br>
-<code>on_delete=models.CASCADE</code>)
+<code>on_delete=models.CASCADE</code>
 
 Раздел "Прохождения" ( http://127.0.0.1:8000/admin/quizzes/attempt/ ) содержит список с результатами пройденных тестов.</br>
 Раздел "Ответы" ( http://127.0.0.1:8000/admin/quizzes/answer/ ) - подробная информация об ответах пользователя.</br>
