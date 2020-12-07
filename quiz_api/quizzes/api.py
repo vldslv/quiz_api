@@ -14,6 +14,6 @@ class QuizViewSet(viewsets.ModelViewSet):
 class AttemptViewSet(viewsets.ModelViewSet):
     queryset = Attempt.objects.all()
     serializer_class = AttemptSerializer
-    http_method_names = ['get', 'head', 'post', 'delete']
+    http_method_names = ['get', 'head']
     filter_backends = [filters.SearchFilter]
     search_fields = ['=user_id',]
